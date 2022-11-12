@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    max-width: auto;
+    color: rgb(3, 3, 3);
+    padding: '7rem';
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.875rem; /* 24px */
+    line-height: 2.25rem; /* 32px */
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    overflow: hidden;
+    background-color: rgb(226 232 240);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-indent: 2.5rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.ItemContainer{
+    display: flex;
+    flex-basis: auto;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-items: flex-start;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+.ItemCard{
+    flex: 1 ;
+    border-width: 2px; 
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    margin: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 20%;
+    min-width: 20%;
+    min-height: 30%;
+    max-height: 30%;
+}
+/* visited link */
+.ProductDisplay:visited {
+    opacity: 0.75;
+  }
+  
+  /* mouse over link */
+.ProductDisplay:hover {
+    box-shadow: inset 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 700ms;
+  }
+
+  /* selected link */
+  .ItemCard:active {
+    color: #0000FF;
+  }
+
+  .Button{
+    background-color: rgb(221, 0, 0);
+    color: aliceblue;
+    width: 16rem;
+    height: 2rem; 
+    font-weight: 700;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+.ProductContainer{
+  display : flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.ProductDisplay{
+  display: flex;
+  flex-wrap: wrap;
+  width: 425px;
+  padding: 38px;
+  float:"bottom" ;
+  border-width: 2px; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  margin: 5px;
+  border-radius: 0.5rem;
+}
+.Image{
+  width: 137px;
+  height: 238px;
+}
+.Title{
+  font-weight: 700;
+  padding-top: 9px;
+}
+
+img{
+  height:"100px";
+  /* float:"left" ; */
+  width:"100px";
+  object-fit:"cover";
+}
+.DetailsContainer{
+  height:"100px";
+  width:"100px";
+}
+  
